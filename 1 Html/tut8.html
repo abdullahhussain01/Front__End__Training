@@ -1,0 +1,64 @@
+<!-- HTML Tutorial: Forms & Input Tags | Web Development Tutorials #8 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Forms</title>
+</head>
+
+<body>
+    <!-- shortcut=alt+downword or upward arrow to move any line to downward or upware -->
+    <h3>This is Html Form</h3>
+    <!-- form action is a link of backend php with html  -->
+    <form action="backend.php">
+        <label for="fname">First Name:</label>
+        <div><input type="text" name="firstname" id="fname"></div>
+        <br>
+        <label for="lname">Last Name:</label>
+        <div><input type="text" name="lastname" id="lname"></div>
+        <br>
+        <label for="res"> Residence:</label>
+        <div><input type="text" name="residence" id="res"></div>
+        <br>
+        <label for="birth">Date of Birth:</label>
+        <div><input type="date" name="dateofbirth" id="birth"></div>
+        <br>
+        <!-- for button -->
+        <br>
+        <label for="bon">Bonus:</label>
+        <div><input type="number" name="Bonus" id="bon"></div>
+        <br>
+        <!-- checkbox for tick  -->
+        
+        <div>Are You Eligible?<input type="checkbox" name="eligibile">Accept Term and Conditions<input type="checkbox"
+                name="eligibile" checked>
+        </div>
+        <br>
+        <!-- i have given name mygender so i can only select one male or female if i would have select different name so i could select multiple of them -->
+        <!-- radio for selecting which you want to choose like checkbox -->
+        <div>Gender: Male <input type="radio" name="mygender"> Female <input type="radio" name="mygender">Others <input
+                type="radio" name="mygender"></div>
+
+                <!-- textarea is a tag which provide to type large paragraph  -->
+                <br>
+                <div>Write about yourself <br><textarea name="mytext" cols="30" rows="10"></textarea></div>
+                <div>
+                    <label for="car">Car</label>
+                    <select name="MyCar" id="car">
+                        <option value="Indica">Indica</option>
+                        <option value="Swift" selected>Swift</option>
+                    </select>
+                </div>
+                <br>
+                <input type="submit" value="Submit Now">
+                <input type="reset" value="Reset Now">
+                
+
+    </form>
+
+</body>
+
+</html>
